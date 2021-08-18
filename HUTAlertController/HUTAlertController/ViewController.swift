@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func showAlert(_ sender: Any) {
-        let alert = HUTAlertController(title: "确定删除充电费率？", description: "是否解除该电子锁？", style: .sheet_bottom)
+        let alert = HUTAlertController(title: "确定删除充电费率？", message: "是否解除该电子锁？", preferredStyle: .sheet_bottom)
         
         let cancelAction = HUTAlertAction(title: "Cancel", style: .cancel, action: nil)
         let comfirmAction = HUTAlertAction(title: "Confirm", style: .default) {
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAlertWithTextFlied(_ sender: Any) {
-        let alert = HUTAlertController(title: "确定删除充电费率？", description: nil, style: .sheet_center)
+        let alert = HUTAlertController(title: "确定删除充电费率？", message: nil, preferredStyle: .sheet_center)
         
         let cancelAction = HUTAlertAction(title: "Cancel", style: .cancel, action: nil)
         let comfirmAction = HUTAlertAction(title: "Confirm", style: .default) {

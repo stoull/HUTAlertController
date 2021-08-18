@@ -32,7 +32,7 @@ class HUTAlertController: UIViewController {
     
     
     @IBOutlet weak var alertView: UIView!
-    fileprivate var textFields: [UITextField] = []
+    var textFields: [UITextField] = []
     fileprivate var ALERT_TEXTFIELD_VIEW_HEIGHT : CGFloat = 40
     fileprivate var ALERT_ACTION_VIEW_HEIGHT: CGFloat = 54.0
     fileprivate let alertTransition = HUTAlertTransition()
@@ -62,9 +62,9 @@ class HUTAlertController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
 
-    convenience init(title: String?, description: String?, style:HUTAlertControllerStyle) {
+    convenience init(title: String?, message: String?, preferredStyle:HUTAlertControllerStyle) {
         self.init()
-        self.alertStyle = style
+        self.alertStyle = preferredStyle
         let mainBundle = Bundle(for: self.classForCoder)
         guard let nib = mainBundle.loadNibNamed("HUTAlertController", owner: self, options: nil), let unwrappedView = nib[0] as? UIView else {
             return
@@ -81,14 +81,14 @@ class HUTAlertController: UIViewController {
             titleLabel.isHidden = true
         }
         
-        if let description = description {
+        if let description = message {
             descriptionLabel.text = description
         } else {
             descriptionLabel.isHidden = true
         }
         alertTextFieldStackView.isHidden = true
         
-        if style == .sheet_bottom{
+        if preferredStyle == .sheet_bottom{
             alertActionStackView.spacing = 0.0
             NSLayoutConstraint.deactivate([alertViewCenterYConstraint])
             let alertViewBottomConstraint = alertView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -40.0)
