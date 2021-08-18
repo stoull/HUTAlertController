@@ -1,0 +1,380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C90A590626CCF5AF004704F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A590526CCF5AF004704F6 /* AppDelegate.swift */; };
+		C90A590826CCF5AF004704F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A590726CCF5AF004704F6 /* SceneDelegate.swift */; };
+		C90A590A26CCF5AF004704F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A590926CCF5AF004704F6 /* ViewController.swift */; };
+		C90A590D26CCF5AF004704F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90A590B26CCF5AF004704F6 /* Main.storyboard */; };
+		C90A590F26CCF5B7004704F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90A590E26CCF5B7004704F6 /* Assets.xcassets */; };
+		C90A591226CCF5B7004704F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90A591026CCF5B7004704F6 /* LaunchScreen.storyboard */; };
+		C90A591D26CCF5D9004704F6 /* HUTAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A591A26CCF5D9004704F6 /* HUTAlertController.swift */; };
+		C90A591E26CCF5D9004704F6 /* HUTAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C90A591B26CCF5D9004704F6 /* HUTAlertController.xib */; };
+		C90A591F26CCF5D9004704F6 /* ATAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A591C26CCF5D9004704F6 /* ATAlertAction.swift */; };
+		C90A592626CCF5F3004704F6 /* HUTAlertPresentAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A592226CCF5F3004704F6 /* HUTAlertPresentAnimation.swift */; };
+		C90A592726CCF5F3004704F6 /* HUTAlertInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A592326CCF5F3004704F6 /* HUTAlertInteractionController.swift */; };
+		C90A592826CCF5F3004704F6 /* HUTAlertDismissAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A592426CCF5F3004704F6 /* HUTAlertDismissAnimation.swift */; };
+		C90A592926CCF5F3004704F6 /* HUTAlertTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90A592526CCF5F3004704F6 /* HUTAlertTransition.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C90A590226CCF5AF004704F6 /* HUTAlertController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HUTAlertController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90A590526CCF5AF004704F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C90A590726CCF5AF004704F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C90A590926CCF5AF004704F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C90A590C26CCF5AF004704F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C90A590E26CCF5B7004704F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C90A591126CCF5B7004704F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C90A591326CCF5B7004704F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90A591A26CCF5D9004704F6 /* HUTAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUTAlertController.swift; sourceTree = "<group>"; };
+		C90A591B26CCF5D9004704F6 /* HUTAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HUTAlertController.xib; sourceTree = "<group>"; };
+		C90A591C26CCF5D9004704F6 /* ATAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATAlertAction.swift; sourceTree = "<group>"; };
+		C90A592226CCF5F3004704F6 /* HUTAlertPresentAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUTAlertPresentAnimation.swift; sourceTree = "<group>"; };
+		C90A592326CCF5F3004704F6 /* HUTAlertInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUTAlertInteractionController.swift; sourceTree = "<group>"; };
+		C90A592426CCF5F3004704F6 /* HUTAlertDismissAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUTAlertDismissAnimation.swift; sourceTree = "<group>"; };
+		C90A592526CCF5F3004704F6 /* HUTAlertTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUTAlertTransition.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C90A58FF26CCF5AF004704F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C90A58F926CCF5AF004704F6 = {
+			isa = PBXGroup;
+			children = (
+				C90A590426CCF5AF004704F6 /* HUTAlertController */,
+				C90A590326CCF5AF004704F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C90A590326CCF5AF004704F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C90A590226CCF5AF004704F6 /* HUTAlertController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C90A590426CCF5AF004704F6 /* HUTAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				C90A590526CCF5AF004704F6 /* AppDelegate.swift */,
+				C90A590726CCF5AF004704F6 /* SceneDelegate.swift */,
+				C90A590926CCF5AF004704F6 /* ViewController.swift */,
+				C90A591C26CCF5D9004704F6 /* ATAlertAction.swift */,
+				C90A591A26CCF5D9004704F6 /* HUTAlertController.swift */,
+				C90A591B26CCF5D9004704F6 /* HUTAlertController.xib */,
+				C90A592126CCF5E9004704F6 /* Transition */,
+				C90A590B26CCF5AF004704F6 /* Main.storyboard */,
+				C90A590E26CCF5B7004704F6 /* Assets.xcassets */,
+				C90A591026CCF5B7004704F6 /* LaunchScreen.storyboard */,
+				C90A591326CCF5B7004704F6 /* Info.plist */,
+			);
+			path = HUTAlertController;
+			sourceTree = "<group>";
+		};
+		C90A592126CCF5E9004704F6 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				C90A592526CCF5F3004704F6 /* HUTAlertTransition.swift */,
+				C90A592226CCF5F3004704F6 /* HUTAlertPresentAnimation.swift */,
+				C90A592426CCF5F3004704F6 /* HUTAlertDismissAnimation.swift */,
+				C90A592326CCF5F3004704F6 /* HUTAlertInteractionController.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C90A590126CCF5AF004704F6 /* HUTAlertController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C90A591626CCF5B7004704F6 /* Build configuration list for PBXNativeTarget "HUTAlertController" */;
+			buildPhases = (
+				C90A58FE26CCF5AF004704F6 /* Sources */,
+				C90A58FF26CCF5AF004704F6 /* Frameworks */,
+				C90A590026CCF5AF004704F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HUTAlertController;
+			productName = HUTAlertController;
+			productReference = C90A590226CCF5AF004704F6 /* HUTAlertController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C90A58FA26CCF5AF004704F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					C90A590126CCF5AF004704F6 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = C90A58FD26CCF5AF004704F6 /* Build configuration list for PBXProject "HUTAlertController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C90A58F926CCF5AF004704F6;
+			productRefGroup = C90A590326CCF5AF004704F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C90A590126CCF5AF004704F6 /* HUTAlertController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C90A590026CCF5AF004704F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90A591E26CCF5D9004704F6 /* HUTAlertController.xib in Resources */,
+				C90A591226CCF5B7004704F6 /* LaunchScreen.storyboard in Resources */,
+				C90A590F26CCF5B7004704F6 /* Assets.xcassets in Resources */,
+				C90A590D26CCF5AF004704F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C90A58FE26CCF5AF004704F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90A591F26CCF5D9004704F6 /* ATAlertAction.swift in Sources */,
+				C90A591D26CCF5D9004704F6 /* HUTAlertController.swift in Sources */,
+				C90A590A26CCF5AF004704F6 /* ViewController.swift in Sources */,
+				C90A592726CCF5F3004704F6 /* HUTAlertInteractionController.swift in Sources */,
+				C90A592926CCF5F3004704F6 /* HUTAlertTransition.swift in Sources */,
+				C90A590626CCF5AF004704F6 /* AppDelegate.swift in Sources */,
+				C90A590826CCF5AF004704F6 /* SceneDelegate.swift in Sources */,
+				C90A592826CCF5F3004704F6 /* HUTAlertDismissAnimation.swift in Sources */,
+				C90A592626CCF5F3004704F6 /* HUTAlertPresentAnimation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C90A590B26CCF5AF004704F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90A590C26CCF5AF004704F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C90A591026CCF5B7004704F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90A591126CCF5B7004704F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C90A591426CCF5B7004704F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C90A591526CCF5B7004704F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C90A591726CCF5B7004704F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HUTAlertController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hut.HUTAlertController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C90A591826CCF5B7004704F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HUTAlertController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hut.HUTAlertController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C90A58FD26CCF5AF004704F6 /* Build configuration list for PBXProject "HUTAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90A591426CCF5B7004704F6 /* Debug */,
+				C90A591526CCF5B7004704F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C90A591626CCF5B7004704F6 /* Build configuration list for PBXNativeTarget "HUTAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C90A591726CCF5B7004704F6 /* Debug */,
+				C90A591826CCF5B7004704F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C90A58FA26CCF5AF004704F6 /* Project object */;
+}

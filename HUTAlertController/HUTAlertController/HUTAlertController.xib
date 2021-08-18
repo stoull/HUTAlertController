@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HUTAlertController" customModule="HUTAlertController" customModuleProvider="target">
+            <connections>
+                <outlet property="alertActionStackView" destination="5Qb-73-wEU" id="wpp-G0-cMb"/>
+                <outlet property="alertActionStackViewHeightConstraint" destination="9oY-T6-5oA" id="oLe-gb-KI7"/>
+                <outlet property="alertTextFieldStackView" destination="z0j-oz-ZEQ" id="6db-ny-1vR"/>
+                <outlet property="alertTextFieldStackViewBottomConstraint" destination="sQo-YM-wYn" id="3vJ-tZ-x4S"/>
+                <outlet property="alertTextFieldStackViewHeightConstraint" destination="rga-CH-n4a" id="SPY-tB-0Ds"/>
+                <outlet property="alertTextFieldStackViewTopConstraint" destination="0Kb-HT-8LB" id="0uN-Kq-Xdq"/>
+                <outlet property="alertTitleStackViewTopConstraint" destination="VUe-oR-3p2" id="tKy-Hk-pCQ"/>
+                <outlet property="alertView" destination="1NP-CX-JBI" id="nUH-6o-soy"/>
+                <outlet property="alertViewCenterYConstraint" destination="zzO-R8-eLU" id="xLv-YL-br3"/>
+                <outlet property="alertViewHeightConstraint" destination="BoQ-bq-jJm" id="2L4-21-5SL"/>
+                <outlet property="alertViewLeadingConstraint" destination="FkY-kw-FO7" id="zWO-4h-Yp7"/>
+                <outlet property="alertViewTrailingConstraint" destination="oz9-nq-saI" id="Q4G-Ug-sEO"/>
+                <outlet property="descriptionLabel" destination="t1r-ab-vY7" id="1O9-cA-dfr"/>
+                <outlet property="titleLabel" destination="y3d-Zq-hEo" id="X0N-ab-zAt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1NP-CX-JBI" userLabel="Alert View">
+                    <rect key="frame" x="46" y="318" width="322" height="180"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6fN-AN-zWh" userLabel="Titles View">
+                            <rect key="frame" x="0.0" y="20" width="322" height="26"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3d-Zq-hEo" userLabel="Title Label">
+                                    <rect key="frame" x="0.0" y="0.0" width="322" height="13"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1r-ab-vY7" userLabel="Description Label">
+                                    <rect key="frame" x="0.0" y="13" width="322" height="13"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z0j-oz-ZEQ" userLabel="TextFields View">
+                            <rect key="frame" x="20" y="66" width="282" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="rga-CH-n4a"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="5Qb-73-wEU" userLabel="Actions View">
+                            <rect key="frame" x="0.0" y="126" width="322" height="54"/>
+                            <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="9oY-T6-5oA"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="z0j-oz-ZEQ" firstAttribute="top" secondItem="6fN-AN-zWh" secondAttribute="bottom" constant="20" id="0Kb-HT-8LB"/>
+                        <constraint firstItem="z0j-oz-ZEQ" firstAttribute="leading" secondItem="1NP-CX-JBI" secondAttribute="leading" constant="20" id="6SU-am-Ohd"/>
+                        <constraint firstAttribute="height" constant="180" id="BoQ-bq-jJm"/>
+                        <constraint firstItem="6fN-AN-zWh" firstAttribute="leading" secondItem="1NP-CX-JBI" secondAttribute="leading" id="Bpb-hF-lW7"/>
+                        <constraint firstAttribute="trailing" secondItem="6fN-AN-zWh" secondAttribute="trailing" id="EvB-t8-0ri"/>
+                        <constraint firstAttribute="trailing" secondItem="z0j-oz-ZEQ" secondAttribute="trailing" constant="20" id="Jag-z0-Itz"/>
+                        <constraint firstAttribute="trailing" secondItem="5Qb-73-wEU" secondAttribute="trailing" id="PPn-rr-snE"/>
+                        <constraint firstItem="6fN-AN-zWh" firstAttribute="top" secondItem="1NP-CX-JBI" secondAttribute="top" constant="20" id="VUe-oR-3p2"/>
+                        <constraint firstAttribute="bottom" secondItem="5Qb-73-wEU" secondAttribute="bottom" id="cGs-q1-Ov8"/>
+                        <constraint firstItem="5Qb-73-wEU" firstAttribute="leading" secondItem="1NP-CX-JBI" secondAttribute="leading" id="gxZ-mQ-7uY"/>
+                        <constraint firstItem="5Qb-73-wEU" firstAttribute="top" secondItem="z0j-oz-ZEQ" secondAttribute="bottom" constant="20" id="sQo-YM-wYn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1NP-CX-JBI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="46" id="FkY-kw-FO7"/>
+                <constraint firstItem="1NP-CX-JBI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hTx-pE-TIR"/>
+                <constraint firstAttribute="trailing" secondItem="1NP-CX-JBI" secondAttribute="trailing" constant="46" id="oz9-nq-saI"/>
+                <constraint firstItem="1NP-CX-JBI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-40" id="zzO-R8-eLU"/>
+            </constraints>
+            <point key="canvasLocation" x="18.840579710144929" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
